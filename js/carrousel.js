@@ -44,10 +44,10 @@ for (let i = 0; i < datas_slides.length; i++) {
 
 carrousel.innerHTML += `
     <div class="slide_options">
-          <span class="silde_left">
+          <span class="slide_left">
             <i class="fa-solid fa-chevron-left"></i>
           </span>
-          <span class="silde_right">
+          <span class="slide_right">
             <i class="fa-solid fa-chevron-right"></i>
           </span>
         </div>
@@ -83,23 +83,18 @@ QUELQUES FONCTIONS UTILES
 
 //FONCTION PERMETTANT D'AFFICHER LES SLIDES COURANTS
 
-function showSlide(index, direction){
+function showSlide(index){
   //ON MASQUE LE SLIDE COURANT
   slides[slide_courant].classList.add('hide');
 
   //ON CHERCHE L'INDICE DU NOUVEAU SLIDE A AFFICHER
-  if(direction.trim().toLowerCase() == "right"){
-    if(index >= slides.length){
-      slide_courant = 0
-    }
-    else if(direction.trim().toLowerCase() == "left"){
-      slide_courant = index;
-    }
-  }
+  slide_courant = ((index % slides.length) + slides.length) % slides.length;
 
   //ON AFFICHE LE SLIDE COURANT
   slides[slide_courant].classList.remove('hide');
 }
+
+showSlide(slide_courant);
 
 /*
 ==========================================
@@ -108,11 +103,11 @@ LANCER LE SLIDE
 */
 
 slides_left.addEventListener("click", function(){
-  showSlide(slide_courant - 1, "left"); 
+  showSlide(slide_courant - 1);
 });
 
 slides_right.addEventListener("click", function(){
-  showSlide(slide_courant + 1, "right");
+  showSlide(slide_courant + 1);
 });
 
 /*
@@ -122,5 +117,5 @@ LANCER LE SLIDE AUTOMATIQUEMENT
 */
 
 setInterval( function(){
-  showSlide(slide_courant + 1, "right");
+  showSlide(slide_courant + 1);
 }, 5000);
