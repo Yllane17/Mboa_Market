@@ -102,6 +102,16 @@ a, a:visited{
     cursor: pointer;
 }
 
+.overflow{
+    overflow: hidden;
+}
+
+.close{
+    font-size: 14pt;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--danger-color);
+}
 /*
 =========================
 DESIGN ENTETE
@@ -116,6 +126,7 @@ DESIGN ENTETE
     width: 100%;
     padding: 20px 40px;
     z-index: 1000;
+    transition:all 0.5s ease-in-out;
 }
 
 #entete a{
@@ -152,11 +163,42 @@ DESIGN ENTETE
     transition: all 0.5s ease-in-out;
 }
 
+#nb-articles{
+    display: inline-block;
+    min-width: 22px;
+    padding: 1px 6px;
+    margin-left: 4px;
+    text-align: center;
+    font-size: 8pt;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--third-color);
+    border-radius: 20px;
+}
+
+#entete.entete_fond{
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+    padding: 12px 40px;
+}
+
+#entete.entete_fond a{
+    color: var(--second-color);
+}
+
+#entete.entete_fond #btn_panier{
+    border-color: var(--second-color);
+}
+
+#entete.entete_fond #btn_panier:hover{
+    color:var(--white-color);
+    border-color: var(--main-color);
+}
+
 /*
 =========================
 DESIGN CARROUSEL
 =========================
-
 */
 
 #carrousel{
@@ -244,4 +286,97 @@ DESIGN CARROUSEL
     background-color: var(--main-color);
     border-color: var(--main-color);
     transition: all 0.5 ease-in-out;
+}
+
+/*
+=========================
+DESIGN BOUTIQUE
+=========================
+*/
+
+#boutique {
+    padding: 70px 8%;
+    background-color: var(--white-color);
+    scroll-margin-top: 60px;
+}
+
+#boutique .boutique-entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#boutique .boutique-entete h2{
+    font-size: 26pt;
+    color: var(--second-color);
+}
+
+#boutique .boutique-entete #nb-resultats{
+    color: var(--second-color);
+}
+
+#boutique .boutique-outils{
+    display: flex;
+    gap: 15px;
+    margin: 25px 0px 15px;
+}
+
+#boutique .recherche{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+    background-color: var(--white-color);
+    border: 2px solid var(--second-color);
+    border-radius: 30px;
+}
+
+#boutique .recherche input{
+    flex: 1;
+    padding: 14px 0px;
+    border: none;
+    outline: none;
+    font-size: var(--font-size);
+    background: none;
+}
+
+#boutique select{
+    padding: 0px 20px;
+    border: 2px solid var(--second-color);
+    border-radius: 30px;
+    font-size: var(--font-size);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#categories .categorie{
+    padding: 8px 20px;
+    border: 1px solid var(--second-color);
+    border-radius: 30px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+#categories .categorie:hover,
+#categories .categorie.actif{
+    color: var(--white-color);
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+    transition: all 0.4s ease-in-out;
+}
+
+#produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(220px, 1fr);
+    gap: 25px;
 }

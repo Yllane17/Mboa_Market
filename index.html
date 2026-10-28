@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Gestion du CSS -->
+    <!-- GESTION DU CSS -->
     <link
       rel="stylesheet"
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
@@ -21,7 +21,7 @@
         <div id="menu">
           <a href="#" id="btn_panier">
             Panier <span><i class="fa-solid fa-cart-shopping"></i></span>
-            <span id="nd-articeles" class="hide">0</span>
+            <span id="nd-articles" class="hide">0</span>
           </a>
         </div>
       </div>
@@ -32,11 +32,11 @@
     <main id="conteneur">
       <!-- SECTION CARROUSEL -->
       <section id="carrousel">
-        <!-- Boutons d'options du slide -->
+        <!-- BOUTONS D'OPTIONS DU SLIDE -->
       </section>
       <!-- SECTION BOUTIQUE -->
-      <section>
-        <div class="boutique-entet">
+      <section id="boutique">
+        <div class="boutique-entete">
           <h2>Nos produits du Marché</h2>
           <p id="nb-resultats"></p>
         </div>
@@ -52,6 +52,7 @@
               placeholder="Rechercher : poivre blanc, poulet..."
             />
           </div>
+          
           <select name="tri" id="tri">
             <option value="default">Trier par : recommandés</option>
             <option value="prix-croissant">Prix croissant</option>
@@ -59,10 +60,28 @@
             <option value="nom">Nom (A-Z)</option>
           </select>
         </div>
+        <!-- LISTE DES CATEGORIES -->
+        <div id="categories">
+
+        </div>
+        <!-- LISTE DES PRODUITS -->
+        <div id="produits"> 
+
+        </div>
       </section>
     </main>
 
-    <!-- Gestion du Javascript -->
+    <footer id="pied">
+      <p>
+        <b>Mboa<span>Market</span></b>
+        Le gout de ça, livré chez vous.
+      </p>
+      <p>
+        Tel: +237 652 99 70 19 | Email: yllanedave43@gmail.com
+      </p>
+    </footer>
+
+    <!-- GESTION DU JAVASCRIPT -->
     <script text="text/javascript" src="js/carrousel.js"></script>
     <script text="text/javascript" src="js/script.js"></script>
   </body>
