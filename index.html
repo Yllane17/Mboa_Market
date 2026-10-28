@@ -21,6 +21,7 @@
         <div id="menu">
           <a href="#" id="btn_panier">
             Panier <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span id="nd-articeles" class="hide">0</span>
           </a>
         </div>
       </div>
@@ -32,7 +33,31 @@
       <!-- SECTION CARROUSEL -->
       <section id="carrousel">
         <!-- Boutons d'options du slide -->
-        
+      </section>
+      <!-- SECTION BOUTIQUE -->
+      <section>
+        <div class="boutique-entet">
+          <h2>Nos produits du Marché</h2>
+          <p id="nb-resultats"></p>
+        </div>
+
+        <!-- FILTRE DE RECHERCHE DES PRODUITS -->
+         <div class="boutique-outils">
+          <div class="recherche">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" name="search" id="recherche" placeholder="Rechercher : poivre blanc, poulet...">
+          </div>
+          <select name="tri" id="tri">
+            <option value="default">
+              Trier par : recommandés
+            </option>
+            <option value="prix-croissant">Prix croissant</option>
+            <option value="prix-decroissant">Prix déroissant</option>
+            <option value="nom">
+              Nom (A-Z)
+            </option>
+          </select>
+         </div>
       </section>
     </main>
 
