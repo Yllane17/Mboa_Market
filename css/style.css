@@ -29,7 +29,7 @@ DECLARATION DES ANIMATIONS
 
 @keyframes fondu {
     from{
-        opacity: 0;
+        /* opacity: 0; */
     }
     to{
         opacity: 1;
@@ -38,11 +38,11 @@ DECLARATION DES ANIMATIONS
 
 @keyframes comingleft {
     from{
-        opacity: 0;
+        /* opacity: 0; */
         transform: translateX(-70px);
     }
     to{
-        opacity: 1;
+        /* opacity: 1; */
         transform: translateX(0px);
     }
 }
