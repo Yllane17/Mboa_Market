@@ -1,0 +1,502 @@
+[
+    {
+        "id": 1,
+        "nom": "Poivre blanc de penja",
+        "Categorie": "Epices",
+        "Prix": 7000,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-mortar-pestle",
+        "stock": 100,
+        "description": "Poivre réputé, cultivé dans la vallée de Penja"
+    },
+    {
+        "id": 2,
+        "nom": "Poivre noir de Penja",
+        "Categorie": "Epices",
+        "Prix": 6500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-pepper-hot",
+        "stock": 90,
+        "description": "Poivre noir aromatique et puissant de la vallée de Penja"
+    },
+    {
+        "id": 3,
+        "nom": "Piment rouge séché",
+        "Categorie": "Epices",
+        "Prix": 2500,
+        "Unite": "250 g",
+        "icon": "fa-solid fa-fire",
+        "stock": 120,
+        "description": "Piment fort séché au soleil, idéal pour relever les sauces"
+    },
+    {
+        "id": 4,
+        "nom": "Gingembre en poudre",
+        "Categorie": "Epices",
+        "Prix": 1500,
+        "Unite": "250 g",
+        "icon": "fa-solid fa-jar",
+        "stock": 80,
+        "description": "Gingembre moulu pour boissons, sauces et pâtisseries"
+    },
+    {
+        "id": 5,
+        "nom": "Djansang décortiqué",
+        "Categorie": "Epices",
+        "Prix": 3000,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-seedling",
+        "stock": 60,
+        "description": "Graines de djansang utilisées dans les sauces traditionnelles"
+    },
+    {
+        "id": 6,
+        "nom": "Pébé (noix de muscade)",
+        "Categorie": "Epices",
+        "Prix": 2000,
+        "Unite": "250 g",
+        "icon": "fa-solid fa-cookie",
+        "stock": 70,
+        "description": "Noix de muscade locale au parfum chaud et boisé"
+    },
+    {
+        "id": 7,
+        "nom": "Mélange Mbongo Tchobi",
+        "Categorie": "Epices",
+        "Prix": 3500,
+        "Unite": "250 g",
+        "icon": "fa-solid fa-bowl-food",
+        "stock": 50,
+        "description": "Mélange d'épices pour la célèbre sauce noire du Littoral"
+    },
+    {
+        "id": 8,
+        "nom": "Ananas Cayenne",
+        "Categorie": "Fruits",
+        "Prix": 1500,
+        "Unite": "1 pièce",
+        "icon": "fa-solid fa-sun",
+        "stock": 75,
+        "description": "Ananas sucré et juteux cultivé au Cameroun"
+    },
+    {
+        "id": 9,
+        "nom": "Banane plantain",
+        "Categorie": "Fruits",
+        "Prix": 2000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-moon",
+        "stock": 150,
+        "description": "Plantain idéal pour frire, bouillir ou griller"
+    },
+    {
+        "id": 10,
+        "nom": "Mangue",
+        "Categorie": "Fruits",
+        "Prix": 1000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-apple-whole",
+        "stock": 110,
+        "description": "Mangues mûres, sucrées et parfumées"
+    },
+    {
+        "id": 11,
+        "nom": "Papaye",
+        "Categorie": "Fruits",
+        "Prix": 1200,
+        "Unite": "1 pièce",
+        "icon": "fa-solid fa-droplet",
+        "stock": 60,
+        "description": "Papaye fraîche à la chair fondante"
+    },
+    {
+        "id": 12,
+        "nom": "Avocat",
+        "Categorie": "Fruits",
+        "Prix": 1500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-leaf",
+        "stock": 85,
+        "description": "Avocats beurrés, riches et crémeux"
+    },
+    {
+        "id": 13,
+        "nom": "Citron vert",
+        "Categorie": "Fruits",
+        "Prix": 800,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-lemon",
+        "stock": 100,
+        "description": "Citrons verts acidulés et très juteux"
+    },
+    {
+        "id": 14,
+        "nom": "Orange",
+        "Categorie": "Fruits",
+        "Prix": 1000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-circle",
+        "stock": 130,
+        "description": "Oranges douces riches en vitamine C"
+    },
+    {
+        "id": 15,
+        "nom": "Safou",
+        "Categorie": "Fruits",
+        "Prix": 1500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-gem",
+        "stock": 40,
+        "description": "Fruit local appelé aussi prune africaine, à déguster cuit"
+    },
+    {
+        "id": 16,
+        "nom": "Tomate fraîche",
+        "Categorie": "Légumes",
+        "Prix": 1200,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-heart",
+        "stock": 140,
+        "description": "Tomates fermes et mûres pour sauces et salades"
+    },
+    {
+        "id": 17,
+        "nom": "Carotte",
+        "Categorie": "Légumes",
+        "Prix": 1000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-carrot",
+        "stock": 90,
+        "description": "Carottes croquantes cultivées dans l'Ouest"
+    },
+    {
+        "id": 18,
+        "nom": "Oignon",
+        "Categorie": "Légumes",
+        "Prix": 1000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-layer-group",
+        "stock": 160,
+        "description": "Oignons au goût prononcé pour toutes vos préparations"
+    },
+    {
+        "id": 19,
+        "nom": "Gombo frais",
+        "Categorie": "Légumes",
+        "Prix": 1500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-pepper-hot",
+        "stock": 55,
+        "description": "Gombo tendre pour sauces gluantes traditionnelles"
+    },
+    {
+        "id": 20,
+        "nom": "Feuilles de ndolé",
+        "Categorie": "Légumes",
+        "Prix": 2000,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-spa",
+        "stock": 45,
+        "description": "Feuilles amères lavées, base du plat national camerounais"
+    },
+    {
+        "id": 21,
+        "nom": "Aubergine locale",
+        "Categorie": "Légumes",
+        "Prix": 1100,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-star",
+        "stock": 65,
+        "description": "Aubergines fraîches pour sauces et ragoûts"
+    },
+    {
+        "id": 22,
+        "nom": "Manioc",
+        "Categorie": "Tubercules",
+        "Prix": 800,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-mountain",
+        "stock": 200,
+        "description": "Racines de manioc pour bâton, gari ou frites"
+    },
+    {
+        "id": 23,
+        "nom": "Igname",
+        "Categorie": "Tubercules",
+        "Prix": 1500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-bone",
+        "stock": 80,
+        "description": "Igname blanche à la chair farineuse"
+    },
+    {
+        "id": 24,
+        "nom": "Patate douce",
+        "Categorie": "Tubercules",
+        "Prix": 1000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-candy-cane",
+        "stock": 95,
+        "description": "Patates douces sucrées, à bouillir ou à rôtir"
+    },
+    {
+        "id": 25,
+        "nom": "Macabo",
+        "Categorie": "Tubercules",
+        "Prix": 1200,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-tree",
+        "stock": 70,
+        "description": "Tubercule traditionnel pour le koki et le macabo pilé"
+    },
+    {
+        "id": 26,
+        "nom": "Pomme de terre",
+        "Categorie": "Tubercules",
+        "Prix": 900,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-cubes",
+        "stock": 180,
+        "description": "Pommes de terre de l'Ouest, polyvalentes en cuisine"
+    },
+    {
+        "id": 27,
+        "nom": "Riz local",
+        "Categorie": "Céréales",
+        "Prix": 800,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-bowl-rice",
+        "stock": 250,
+        "description": "Riz produit au Cameroun, parfumé et savoureux"
+    },
+    {
+        "id": 28,
+        "nom": "Maïs en grains",
+        "Categorie": "Céréales",
+        "Prix": 500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-wheat-awn",
+        "stock": 300,
+        "description": "Maïs sec pour bouillie, couscous ou farine"
+    },
+    {
+        "id": 29,
+        "nom": "Mil",
+        "Categorie": "Céréales",
+        "Prix": 700,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-jar-wheat",
+        "stock": 120,
+        "description": "Mil du Nord, riche en fibres et en minéraux"
+    },
+    {
+        "id": 30,
+        "nom": "Gari (farine de manioc)",
+        "Categorie": "Céréales",
+        "Prix": 900,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-box",
+        "stock": 140,
+        "description": "Semoule de manioc grillée, prête à consommer"
+    },
+    {
+        "id": 31,
+        "nom": "Arachides crues",
+        "Categorie": "Légumineuses",
+        "Prix": 1500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-cookie-bite",
+        "stock": 100,
+        "description": "Arachides décortiquées pour pâte, huile ou grillade"
+    },
+    {
+        "id": 32,
+        "nom": "Haricots rouges",
+        "Categorie": "Légumineuses",
+        "Prix": 1200,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-circle-dot",
+        "stock": 110,
+        "description": "Haricots riches en protéines pour plats mijotés"
+    },
+    {
+        "id": 33,
+        "nom": "Niébé",
+        "Categorie": "Légumineuses",
+        "Prix": 1300,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-ellipsis",
+        "stock": 90,
+        "description": "Haricots niébé pour beignets et plats traditionnels"
+    },
+    {
+        "id": 34,
+        "nom": "Huile de palme rouge",
+        "Categorie": "Huiles",
+        "Prix": 2500,
+        "Unite": "1 L",
+        "icon": "fa-solid fa-oil-can",
+        "stock": 100,
+        "description": "Huile de palme artisanale non raffinée"
+    },
+    {
+        "id": 35,
+        "nom": "Huile d'arachide",
+        "Categorie": "Huiles",
+        "Prix": 3000,
+        "Unite": "1 L",
+        "icon": "fa-solid fa-bottle-droplet",
+        "stock": 80,
+        "description": "Huile d'arachide pure pour friture et assaisonnement"
+    },
+    {
+        "id": 36,
+        "nom": "Beurre de karité",
+        "Categorie": "Huiles",
+        "Prix": 3500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-pump-soap",
+        "stock": 50,
+        "description": "Beurre de karité naturel du Nord, pour cuisine et soins"
+    },
+    {
+        "id": 37,
+        "nom": "Café Arabica de l'Ouest",
+        "Categorie": "Boissons",
+        "Prix": 5000,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-mug-hot",
+        "stock": 70,
+        "description": "Café arabica des hauts plateaux, torréfié artisanalement"
+    },
+    {
+        "id": 38,
+        "nom": "Cacao en poudre",
+        "Categorie": "Boissons",
+        "Prix": 4500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-mug-saucer",
+        "stock": 65,
+        "description": "Poudre de cacao pur issue des plantations camerounaises"
+    },
+    {
+        "id": 39,
+        "nom": "Thé à la citronnelle",
+        "Categorie": "Boissons",
+        "Prix": 1500,
+        "Unite": "100 g",
+        "icon": "fa-solid fa-glass-water",
+        "stock": 90,
+        "description": "Infusion de citronnelle séchée, apaisante et parfumée"
+    },
+    {
+        "id": 40,
+        "nom": "Jus de bissap",
+        "Categorie": "Boissons",
+        "Prix": 1000,
+        "Unite": "1 L",
+        "icon": "fa-solid fa-martini-glass",
+        "stock": 75,
+        "description": "Boisson rafraîchissante à base de fleurs d'hibiscus"
+    },
+    {
+        "id": 41,
+        "nom": "Jus de gingembre",
+        "Categorie": "Boissons",
+        "Prix": 1000,
+        "Unite": "1 L",
+        "icon": "fa-solid fa-wine-bottle",
+        "stock": 70,
+        "description": "Jus de gingembre frais, piquant et tonifiant"
+    },
+    {
+        "id": 42,
+        "nom": "Eau minérale",
+        "Categorie": "Boissons",
+        "Prix": 500,
+        "Unite": "1,5 L",
+        "icon": "fa-solid fa-bottle-water",
+        "stock": 400,
+        "description": "Eau minérale naturelle de source"
+    },
+    {
+        "id": 43,
+        "nom": "Miel d'Adamaoua",
+        "Categorie": "Produits de la ruche",
+        "Prix": 4000,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-spoon",
+        "stock": 55,
+        "description": "Miel naturel et pur récolté dans les savanes de l'Adamaoua"
+    },
+    {
+        "id": 44,
+        "nom": "Poisson fumé (bar)",
+        "Categorie": "Poissons",
+        "Prix": 3500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-fish",
+        "stock": 60,
+        "description": "Poisson fumé artisanalement, à la saveur intense"
+    },
+    {
+        "id": 45,
+        "nom": "Crevettes séchées",
+        "Categorie": "Poissons",
+        "Prix": 4000,
+        "Unite": "250 g",
+        "icon": "fa-solid fa-shrimp",
+        "stock": 45,
+        "description": "Crevettes séchées pour relever sauces et ragoûts"
+    },
+    {
+        "id": 46,
+        "nom": "Poulet de chair",
+        "Categorie": "Viandes",
+        "Prix": 3500,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-drumstick-bite",
+        "stock": 80,
+        "description": "Poulet frais élevé localement"
+    },
+    {
+        "id": 47,
+        "nom": "Viande de bœuf",
+        "Categorie": "Viandes",
+        "Prix": 3000,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-cow",
+        "stock": 70,
+        "description": "Bœuf frais, idéal pour grillades et sauces"
+    },
+    {
+        "id": 48,
+        "nom": "Viande de porc fumée",
+        "Categorie": "Viandes",
+        "Prix": 2800,
+        "Unite": "1 kg",
+        "icon": "fa-solid fa-bacon",
+        "stock": 50,
+        "description": "Porc fumé au bois, goût authentique"
+    },
+    {
+        "id": 49,
+        "nom": "Œufs frais",
+        "Categorie": "Produits laitiers et œufs",
+        "Prix": 2200,
+        "Unite": "30 pièces",
+        "icon": "fa-solid fa-egg",
+        "stock": 120,
+        "description": "Plateau d'œufs frais de ferme"
+    },
+    {
+        "id": 50,
+        "nom": "Fromage local",
+        "Categorie": "Produits laitiers et œufs",
+        "Prix": 3500,
+        "Unite": "500 g",
+        "icon": "fa-solid fa-cheese",
+        "stock": 40,
+        "description": "Fromage artisanal au lait de vache, saveur douce"
+    }
+]
