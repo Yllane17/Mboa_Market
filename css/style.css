@@ -166,7 +166,7 @@ DESIGN ENTETE
   border-radius: 80px;
   padding: 4px 4px;
   margin-top: 4px;
-  
+  cursor: pointer;
 }
 
 #btn_commander:hover {
