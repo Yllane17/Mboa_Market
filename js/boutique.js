@@ -43,6 +43,8 @@ function afficherProduits() {
     return correspondCategorie && texteProduit.includes(termeRecherche);
   });
 
+
+  //TRI DES PRODUITS
   if (tri.value === "prix-croissant") {
     produitsFiltres.sort((a, b) => a.Prix - b.Prix);
   } else if (tri.value === "prix-decroissant") {
@@ -56,6 +58,7 @@ function afficherProduits() {
   }`;
   produitsConteneur.replaceChildren();
 
+  //RECHERCHE DES PRODUITS - AUCUN RESULTAT
   if (produitsFiltres.length === 0) {
     const message = document.createElement("p");
     message.className = "aucun-produit";
@@ -65,6 +68,7 @@ function afficherProduits() {
   }
 
   produitsFiltres.forEach((produit) => {
+    //CREATION DE LA CARTE 
     const carte = document.createElement("article");
     carte.className = "produit-carte";
 
@@ -75,13 +79,16 @@ function afficherProduits() {
     iconeFontAwesome.className = produit.icon;
     icone.append(iconeFontAwesome);
 
+    //CATEGORIE
     const categorie = document.createElement("p");
     categorie.className = "produit-categorie";
     categorie.textContent = produit.Categorie;
 
+    //NOM
     const nom = document.createElement("h3");
     nom.textContent = produit.nom;
 
+    //DESCRIPTION
     const description = document.createElement("p");
     description.className = "produit-description";
     description.textContent = produit.description;
@@ -89,26 +96,40 @@ function afficherProduits() {
     const piedCarte = document.createElement("div");
     piedCarte.className = "produit-pied";
 
+    //PRIX
     const prix = document.createElement("p");
     prix.className = "produit-prix";
     prix.textContent = `${new Intl.NumberFormat("fr-FR").format(
       produit.Prix,
     )} FCFA`;
 
+    //QUANTITÉ
     const unite = document.createElement("span");
     unite.className = "produit-unite";
     unite.textContent = `/ ${produit.Unite}`;
     prix.append(" ", unite);
+
+    //BOUTON COMMANDER
+    const panier = document.createElement("i");
+    panier.classList = "fa-solid fa-cart-arrow-down";
+    panier.id = "btn_commander";
+
+    panier.addEventListener('click', (e)=>{
+        const articles = document.getElementById('nb-articles');
+        articles.textContent= parseInt(articles.textContent) + 1;
+        articles.classList.remove('hide');
+    })
 
     const stock = document.createElement("p");
     stock.className = "produit-stock";
     stock.textContent = `${produit.stock} en stock`;
 
     piedCarte.append(prix, stock);
-    carte.append(icone, categorie, nom, description, piedCarte);
+    carte.append(icone, categorie, nom, description, piedCarte, panier);
     produitsConteneur.append(carte);
   });
 }
+
 
 async function chargerProduits() {
   try {
