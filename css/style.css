@@ -157,11 +157,11 @@ DESIGN ENTETE
 }
 
 #btn_commander {
-  font-size: 25px;
+  font-size: 10pt;
   font-weight: bold;
   background: var(--second-color);
   color: white;
-  width: 80px;
+  width: 100%;
   height: fit-content;
   border-radius: 80px;
   padding: 4px 4px;
@@ -482,6 +482,169 @@ FOOTER
   align-items: center;
   gap: 5px;
 }
+
+#panier-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+#panier-overlay.ouvert {
+  opacity: 1;
+  pointer-events: auto;
+}
+#panier-panneau {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  height: 100dvh;
+  width: min(400px, 100%);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  z-index: 9999;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.2);
+}
+#panier-panneau.ouvert {
+  transform: translateX(0);
+}
+.panier-entete,
+.panier-pied {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.panier-pied {
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid #ddd;
+}
+#panier-liste {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 1rem;
+  gap: 5px;
+}
+.panier-ligne {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+.panier-nom {
+  font-weight: 600;
+  gap: 5px;
+}
+.panier-qte {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0.4rem 0;
+  padding: 2px 2px;
+}
+
+#panier-qte button {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--or-color);
+  color: white;
+  width: 10%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+#panier-qte button:hover {
+  border: 1px transparent black;
+  background-color: var(--second-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.panier-button {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--or-color);
+  color: white;
+  width: 30%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px;
+}
+
+.panier-button:hover {
+  border: 1px transparent black;
+  background-color: var(--second-color);
+  transition: all 0.5s ease-in-out;
+  border-spacing: 3px;
+}
+
+.panier-vide {
+  text-align: center;
+  padding: 2rem 0;
+}
+#panier-valider {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--second-color);
+  color: white;
+  width: 70%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px;
+  padding: 4px 4px;
+}
+
+#panier-annuler {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--danger-color);
+  color: white;
+  width: 70%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px;
+  padding: 4px 4px;
+}
+
+.panier-retirer {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--third-color);
+  color: white;
+  width: 30%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px;
+}
+
+#panier-fermer {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--danger-color);
+  color: white;
+  width: 10%;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px;
+  padding: 4px 4px;
+}
+
 /*
 ==============================
 RESPONSIVE CARTES
