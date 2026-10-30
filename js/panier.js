@@ -16,7 +16,7 @@
       <h2>Mon panier</h2>
       <button type="button" id="panier-fermer" aria-label="Fermer"><i class="fa-solid fa-circle-xmark"></i></button>
     </div>
-    <div id="panier-liste"></div>
+    <div id="panier-liste"></div>     
     <div class="panier-pied">
       <p class="panier-total">Total : <strong id="panier-total">0 FCFA</strong></p>
        <button type="button" id="panier-valider">Valider la commande</button>
@@ -36,7 +36,9 @@
     }
   }
   function sauver() {
-    try { localStorage.setItem(CLE, JSON.stringify(articles)); } catch {}
+    try {
+      localStorage.setItem(CLE, JSON.stringify(articles));
+    } catch {}
   }
 
   function ouvrir() {
@@ -109,18 +111,18 @@
       ctrl.id = "panier-qte";
       const moins = document.createElement("button");
       moins.type = "button";
-    //   moins.textContent = "−";
-      moins.classList ="fa-solid fa-minus"
+      //   moins.textContent = "−";
+      moins.classList = "fa-solid fa-minus";
       moins.addEventListener("click", () => changerQte(a.nom, -1));
 
       const qte = document.createElement("span");
       qte.textContent = a.qte;
 
       const plus = document.createElement("button");
-      plus.id ="panier-qte";
+      plus.id = "panier-qte";
       plus.classList = "fa-solid fa-plus";
       plus.type = "button";
-    //   plus.textContent = "+";
+      //   plus.textContent = "+";
       plus.disabled = a.qte >= a.stock;
       plus.addEventListener("click", () => changerQte(a.nom, 1));
       ctrl.append(moins, qte, plus);
@@ -153,6 +155,25 @@
       maj();
     }
   });
+
+  window.panierApi = {
+    getArticles: () => articles.map((a) => ({ ...a })),
+    getTotal: () => articles.reduce((s, a) => s + a.prix * a.qte, 0),
+    fermer,
+    vider: () => {
+      articles = [];
+      maj();
+    },
+  };
+
+  const btnValider = panneau.querySelector("#panier-valider");
+  if (btnValider) {
+    btnValider.addEventListener("click", () => {
+      if (articles.length === 0) return alert("Votre panier est vide.");
+      fermer();
+      window.ouvrirCommande();
+    });
+  }
 
   window.ajouterAuPanier = ajouter;
   maj();
